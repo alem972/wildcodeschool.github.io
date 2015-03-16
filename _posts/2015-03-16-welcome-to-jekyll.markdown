@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Wild Code School !"
-date: {}
+date: {2015-03-16}
 categories: jekyll update
 published: true
 ---
