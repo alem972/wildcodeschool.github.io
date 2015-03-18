@@ -2,22 +2,238 @@
 layout: default
 ---
 
-<div class="home">
+<!-- Carousel -->
+  <div class="row-fluid">
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+                <img src="//placehold.it/1024x300/abcdef" width="100%">
+          <div class="carousel-caption">
+            <h2>Seul face au code?</h2>
+            <button type="button" class="btn btn-default btn-md">Rejoins-nous!</button>
+          </div>
+        </div>
+        <div class="item">
+                <img src="//placehold.it/1024x300/662222" width="100%">
+          <div class="carousel-caption">
+            <h2>Tu as un projet</h2>
+            <button type="button" class="btn btn-default btn-md">Parlons-en!</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="//placehold.it/1024x300/119922" width="100%">
+          <div class="carousel-caption">
+            <h2>Latin? Hiéroglyphe?</h2>
+            <button type="button" class="btn btn-default btn-md">Viens décrypter!</button>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
+<!-- Trois -->
+  <div class="trois">
+    <div class="sheandytroischiffres">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="col-xs-4 text-center"><p>30</p></div>
+          <div class="col-xs-4 text-center"><p>1h30</p></div>
+          <div class="col-xs-4 text-center"><p>5</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="troischiffres">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="col-xs-4 text-center"><p>Élèves</p></div>
+          <div class="col-xs-4 text-center"><p>de Paris</p></div>
+          <div class="col-xs-4 text-center"><p>mois</p></div>
+        </div>      
+      </div>
+    </div>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<!-- Intro -->
+  <div class="container">
+    <div class="page-header">
+      <blockquote>
+        <h1 class="text-center">Première école numérique au vert!</h1>
+      </blockquote>
+    </div>
+      <p class="lead">Installée au coeur du Parc naturel régional du Perche, dans un cadre propice à la créativité et à l'innovation, l'école numérique Wild Code School propose une formation intensive au développement web et mobile doublée d'un accompagnement vers l'entreprenariat numérique et l'insertion professionnellle.</p>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<!-- Évenements -->
+  <div class="evenements">
+    <div class="container">
+      <div class="page-hader">
+          <h3 class="text-center">Évenements @ venir</h3>
+      </div>
+      <div class="row">
+        <div class="col-xs-7 text-right">
+          <h4><strong>Lundi 2 février à 18H</strong><br>1er Meetup "Atelier ouvert de code"</h4>
+        </div>
+        <div class="col-xs-5">
+          <button type="button" class="btn btn-success btn-sm" style="margin-top: 15px">
+            J'y participe <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="col-xs-7 text-right">
+          <h4><strong>Vendredi 13 mars à 18H</strong><br>2ème Meetup "Atelier création d'entreprise"</h4>
+        </div>
+        <div class="col-xs-5">
+          <button type="button" class="btn btn-success btn-sm" style="margin-top: 15px">
+            J'y participe <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+        </div>        
+      </div>
+    </div>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!-- Newsletter -->
+  <div class="container">
+    <br>
+    <h4 class="text-center">Abonnez-vous à notre newsletter & nos réseaux sociaux afin de restez informé de l'actualité de l'école & de nos prochains évenements.</h4>
+      <div class="col-sm-6">
+        <br>
+        <form>
+          <div class="input-group input-group-mg">
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Votre Email">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-info center-block">Valider</button>
+            </span>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-6 text-center">
+        <img src="./img/socialtest.png" style="padding-top: 23px;">
+      </div>
+  </div>
 
-</div>
+<!-- Ce qu'ils disent de nous -->
+  <div class="container">
+    <div class="page-header">
+      <blockquote>
+        <h3 class="text-center">Ce qu'ils disent de nous</h3>
+      </blockquote>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 text-right">
+        <img src="./img/avatar/Romain.png" class="img-circle" style="width:150px">
+      </div>
+      <div class="col-xs-7 text-right">
+        <h4>
+          <img src="./img/quotes/right-32.png" class="quote-left">
+            Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum.
+          <img src="./img/quotes/left-32.png" class="quote-right"></h4>
+          <h4>#Romain 30 ans formateur @ WCS</h4>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-7 col-xs-offset-1">
+        <h4>
+          <img src="./img/quotes/right-32.png" class="quote-left">
+            Quanta autem vis amicitiae sit, ex hoc intellegi maxime potest, quod ex infinita societate generis humani, quam conciliavit ipsa natura, ita contracta res est et adducta in angustum ut omnis caritas aut inter duos aut inter paucos iungeretur.
+          <img src="./img/quotes/left-32.png" class="quote-right"></h4>
+          <h4>#Caroline 30 ans élève @ WCS </h4>
+      </div>
+      <div class="col-xs-4 text-left">
+        <img src="./img/avatar/Caroline.jpg" class="img-circle" style="width:150px">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-4 text-right">
+        <img src="./img/avatar/Anna.png" class="img-circle" style="width:150px">
+      </div>
+      <div class="col-xs-7 text-right">
+        <h4>
+          <img src="./img/quotes/right-32.png" class="quote-left">
+            Et prima post Osdroenam quam, ut dictum est, ab hac descriptione discrevimus, Commagena, nunc Euphratensis, clementer adsurgit, Hierapoli, vetere Nino et Samosata civitatibus amplis inlustris.
+          <img src="./img/quotes/left-32.png" class="quote-right"></h4>
+          <h4>#Anna 30 ans directrice @ WCS </h4>
+      </div>
+    </div>      
+  </div>
+
+<!-- Ils parlent de nous -->
+  <div class="container">
+    <div class="page-header">
+      <blockquote>
+        <h3 class="text-center">Ils parlent de nous</h3>
+      </blockquote>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <video poster="http://wildcodeschool.fr/wp-content/uploads/2015/01/pochette-TF1-OK.jpg" width="100%" height="100%" controls="controls" type="video/mp4" ><source src="http://wildcodeschool.fr/wp-content/uploads/2014/12/Journal-TF1-WildCodeSchool-REDUCE.mp4"></video>
+      </div>  
+      <div class="col-lg-4"> 
+        <br>
+        <ul class="list-inline ilsparlentdenous text-center">
+          <li><img src="./img/logos/challenges.png"></li>
+          <li><img src="./img/logos/eureetloir.png"></li>
+          <li><img src="./img/logos/europe1.png"></li>
+          <li><img src="./img/logos/franceculture.png"></li>
+          <li><img src="./img/logos/franceinter.png"></li>
+          <li><img src="./img/logos/lacroix.png"></li>
+          <li><img src="./img/logos/lechapee.png"></li>
+          <li><img src="./img/logos/lecho.png"></li>
+          <li><img src="./img/logos/lefigaro.png"></li>
+          <li><img src="./img/logos/leperche.jpg"></li>
+          <li><img src="./img/logos/lepoint.png"></li>
+          <li><img src="./img/logos/observateur.png"></li>
+          <li><img src="./img/logos/radiointensite.jpg"></li>
+          <li><img src="./img/logos/sweetfm.png"></li>
+          <li><img src="./img/logos/tf1.jpg"></li>
+          <li><img src="./img/logos/virginradio.png"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Blog -->
+  <div class="container">
+    <div class="page-header">
+       <blockquote>
+        <h3 class="text-center">Les derniers articles du blog</h3>
+      </blockquote>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="//placehold.it/350x200/222222" class="img-responsive img-thumbnail center-block">
+          <h5><strong>Du code au gouter : quand les enfants découvrent la programmation</strong></h5>
+          <p>Depuis novembre, nous animons un atelier d’initiation à la programmation à l’école primaire du Thieulin : scratch, boucles, conditions, robotique et bien d’autres ingrédients au menu.
+          35 enfants participent à cet atelier hebdomadaire de deux heures dans le cadre des TAP (Temps d’Accueil Périscolaire), le vendredi après-midi....</p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="//placehold.it/350x200/444444" class="img-responsive img-thumbnail center-block">
+          <h5><strong>Des bus sur des rails ? Mais ils sont fous !!</strong></h5>
+          <p>Samuel, élève de la première promo, je découvre avec mes 27 autres camarades de l’école ma nouvelle mission: améliorer le système d‭’‬inscription aux bus de transports scolaires de la Communauté de Communes des Portes du Perche. Depuis mi-novembre, nous développons une application où chaque utilisateur pourra directement saisir ses .‭...</p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="//placehold.it/350x200/888888" class="img-responsive img-thumbnail center-block">
+          <h5><strong>L'arrivée des défricheurs de code dans l'Ouest</strong></h5>
+          <p>Bonjour à tous. Je m’appelle Samuel, j’ai 27 ans et je suis élève dans la toute nouvelle école numérique de La Loupe qui a ouvert ses portes en octobre dernier. Je fais donc parti des pionniers de cette aventure percheronne qui forme aux métiers du numérique. Ce blog est l’occasion pour moi de faire part de mon expérience mais aussi de vous donner un aperçu....</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+<!-- Démarrage automatique du Carousel -->
+  <script type="text/javascript">
+    $(document).ready(function() { 
+    $('#myCarousel').carousel({ interval: 5000, cycle: true });
+     }); 
+  </script>
