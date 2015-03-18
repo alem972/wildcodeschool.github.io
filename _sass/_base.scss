@@ -1,13 +1,37 @@
-body, nav{
+body{
     font-family: "Vera";
     background-color: #F8F8F8;
 }
-h1, h2, h3, h4, h5, p, li{
+
+nav{
+    .navbar-brand{
+        font-family: "CEL";
+    }
+}
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-fixed-top {
+    top: 0px;
+    border-width: 0px 0px 0px;
+}
+
+.navbar-default .navbar-brand{
+    color: #FFF;
+    &:hover{color: #FFF;}
+}
+
+.navbar-default{
+    background-image: url(../img/poly/polyvertclair.png);
+}
+
+h1, h2, h3, h4, h5{
     font-family: "CEL";
 }
 
-p{
-    font-size: 1.25em;
+p, li{
+    font-family:"Vera";
 }
 
 /**
@@ -235,13 +259,16 @@ pre {
         color: #FFF;
     }
     address{
-        color: #777;
+        color: #FFF;
         margin-top: 12px;
     }
     .text-muted {
         font-family: "Vera";
-        color: #777;
+        color: #FFF;
         font-size: 1em;
+    }
+    a{
+        color: #FFF;
     }
 }
 
@@ -272,11 +299,15 @@ pre {
         color: #FFF;
     }
     .troischiffres p{
-        font-size: 25px;
+        font-size: 20px;
         margin-top: -20px;
         padding-bottom: 10px;
         color:#FFF;
     }
+}
+
+.lead{
+    font-size: 17px;
 }
 
 .page-header {
@@ -320,4 +351,5 @@ video{
 }
 .post{
     margin-top: 30px;
+    margin-bottom: 30px;
 }
