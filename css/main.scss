@@ -27,6 +27,15 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+@font-face{
+  font-family : "sheandy";
+  src : url('../polices/sheandy.ttf');}
+@font-face{
+  font-family: "Vera" ;
+  src : url('../polices/vera.ttf');}
+@font-face{
+  font-family: "CEL" ;
+  src : url('../polices/ChampagneEtLimousines.ttf');}
 
 
 // Using media queries with like this:
