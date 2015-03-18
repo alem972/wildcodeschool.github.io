@@ -10,6 +10,9 @@ nav{
 }
 .navbar-default .navbar-nav > li > a {
     color: #FFF;
+    &:hover{
+        color: #D1D1D1;
+    }
 }
 
 .navbar-fixed-top {
@@ -19,7 +22,25 @@ nav{
 
 .navbar-default .navbar-brand{
     color: #FFF;
-    &:hover{color: #FFF;}
+}
+
+.navbar-default li a.dropdown-toggle {
+    color: #FFF;
+    &:hover{
+        color: #D1D1D1;
+    }
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background-image: url(../img/poly/polyvertclair.png);
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFF;
+    &:hover{
+        color: #FFF;
+        background-color: #777;
+    }
 }
 
 .navbar-default{
