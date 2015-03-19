@@ -4,9 +4,8 @@ layout: default
 
 <div class="container">
   <div class="post">
-    <h1>Articles du Blog</h1>
+    <h1 class="text-center">Articles du Blog</h1>
   </div>
-  
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -20,6 +19,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">Souscrivez à notre <a href="{{ "/feed.xml" | prepend: site.baseurl }}">flux RSS</a></p>
+  <p class="rss-subscribe text-right">Souscrivez à notre <a href="{{ "/feed.xml" | prepend: site.baseurl }}">flux RSS</a></p>
 
 </div>
