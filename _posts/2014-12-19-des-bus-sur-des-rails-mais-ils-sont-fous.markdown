@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Des bus sur des rails ? Mais ils sont fous !!!"
+date: {2014-12-19}
+categories: jekyll update
+published: true
+---
+
+![Image Wild Code School](http://wildcodeschool.fr/wp-content/uploads/2014/12/new1024px-BO-DB293H-I-zoom.jpg){: .img-responsive .center-block }
+
+Samuel, élève de la première promo, je découvre avec mes 27 autres camarades de l’école ma nouvelle mission: améliorer le système d‭’‬inscription aux bus de transports scolaires de la Communauté de Communes des Portes du Perche. Depuis mi-novembre, nous développons une application où chaque utilisateur pourra directement saisir ses informations en ligne plutôt que de passer par du remplissage sur papier.‭ ‬Et voilà,‭ ‬à peine nos pages statiques terminées, nous sommes lancés dans les données dynamiques!‭
+
+Imaginez un peu le tableau‬:‭ ‬les utilisateurs peuvent saisir des données,‭ ‬les modifier,‭ ‬les supprimer,‭ ‬les consulter…‭ ‬Autant de conditions et de routines qu‭’‬il faut savoir prendre en compte lors de nos phases de développement.
+
+Nos formateurs nous ont donné un challenge supplémentaire‭ ‬:‭ ‬développer cette application avec l‭’‬un des‭ ‬trois langages de programmation et leurs frameworks‬:‭ ‬PHP et Symphony2,‭ ‬Ruby‭ ‬ et Ruby-on-Rails,‭ ‬ou encore JavaScript et Meteor.‭ ‬Les trois ont justement la particularité de gérer ce genre d‭’‬informations fluctuantes qui se mettent à jour dans une base de données.‭
+
+Ruby-on-Rails, des bus sur les rails…: c‭’‬est le pari que se sont lancés une partie des élèves.‭ ‬Non non non,‭ ‬je vous rassure,‭ ‬il ne s‭’‬agit pas de mettre en place une ligne TGV entre La Loupe et ses communes avoisinantes.‭ Ruby‭ ‬se veut un langage aussi simple que possible dans sa syntaxe.‭ ‬Il travaille de concert avec un framework‭ (‬voyez ça comme une architecture composée de plusieurs logiciels‭) ‬appelé Ruby-on-Rails.‭ ‬Bref,‭ ‬actuellement le projet des élèves avancent à grand pas mais chaque étape peut sembler comme une colline du Perche à gravir.‭ ‬C‭’‬est qu‭’‬en code,‭ «‬chercher la petite bête‭»‬ ne signifie pas avoir une conduite zélée,‭ ‬ici la‭ «‬petite bête‭»‬ c‭’‬est souvent la source de grosse prise de cheveux qui peuvent durer une demi-journée entière.‭ ‬Mais si,‭ ‬vous savez,‭ ‬jusqu’à ce que l‭’‬on réalise qu‭’‬il nous manquait un‭ «‬;» à la ligne‭ ‬11…‭ ‬Qu’à cela ne tienne,‭ ‬après tout,‭ ‬ça fait partie du plaisir du développement que de réussir à solutionner des successions de problèmes.
+
+Des météorites pour‭ ‬accélérer les bus…: Meteor de son côté est un framework, basé sur JavaScript, qui a commencé à voir le jour en‭ ‬2011‭ ‬et qui n‭’‬est pas encore très répandu pour le moment.‭ ‬Sa version‭ ‬1.0,‭ ‬sa version stable donc,‭ ‬vient tout juste de paraître fin‭ ‬octobre dernier.‭ ‬Mais c‭’‬est la star montante,‭ ‬ou plutôt,‭ ‬comme son nom l‭’‬indique,‭ ‬la star qui est sur le point d‭’‬atteindre‭ ‬notre planète! ‬Avec Meteor,‭ ‬à l‭’‬image d‭’‬un shampooing classique,‭ ‬on a un peu une solution tout en‭ ‬1.‭ ‬Pensez-donc,‭ ‬il embarque avec lui une base de données et tout un tas de paquets qui gèrent des formulaires d‭’‬envoi etc.‭ ‬Donc dans le cas présent,‭ ‬c’est ce qui nous intéresse.‭ ‬La grande simplicité de sa syntaxe‭ (‬en‭ ‬quelques lignes de code on exécute la même chose qu‭’‬en plusieurs dizaines de lignes dans un autre langage‭) ‬est véritablement déconcertante.‭ ‬Du coup,‭ ‬bon nombre des élèves de ce groupe,‭ ‬et j‭’‬en fais partie,‭ ‬ont eu du mal à appréhender cet astre lancé à des milliers de kilomètres à l‭’‬heure.‭ ‬Parfois,‭ ‬les choses fonctionnent sans que l‭’‬on ne sache trop pourquoi ni comment,‭ ‬car Meteor,‭ ‬comme on aime à le dire,‭ ‬c‭’‬est magique.‭ ‬Mais exactement comme quand on voit un prestidigitateur à l‭’‬œuvre,‭ ‬on est souvent frustré de ne pas savoir quel est son‭ «‬truc‭»‬.
+
+Si on nous avait dit il y a deux mois que l‭’‬on serait en mesure de coder un programme aussi complet pour une collectivité locale et pour un usage professionnel,‭ ‬on ne l‭’‬aurait sans doute pas cru.‭ ‬Aujourd‭’‬hui,‭ ‬on s’étonne nous-même de ce que nous sommes en train de faire.‭ ‬Le code demande beaucoup d‭’‬investissement,‭ ‬certes,‭ ‬mais avec notre motivation,‭ ‬la marge de progression qui nous habite est fulgurante.‭ ‬En tout cas,‭ ‬qu‭’‬ils soient lancés sur des rails ou en train de traverser la stratosphère à toute vitesse,‭ ‬les bus des Portes du Perche vont prendre un sérieux coup de fouet l‭’‬année prochaine‭ !
+
+Par Samuel Labadie, élève de la première promotion de Wild Code School

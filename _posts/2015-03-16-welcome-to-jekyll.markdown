@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Wild Code School !"
 date: {2015-03-16}
 categories: jekyll update
-published: true
+published: false
 ---
 
 ![Tmux pane on the Perche countryside](http://storage.percheparticipatif.fr/head.png){: .img-responsive }
