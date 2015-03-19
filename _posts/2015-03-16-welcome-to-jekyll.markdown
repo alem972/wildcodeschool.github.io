@@ -6,7 +6,7 @@ categories: jekyll update
 published: true
 ---
 
-![Tmux pane on the Perche countryside](http://storage.percheparticipatif.fr/head.png)
+![Tmux pane on the Perche countryside](http://storage.percheparticipatif.fr/head.png){: .img-responsive }
 
 This is a real chage !!!
 
