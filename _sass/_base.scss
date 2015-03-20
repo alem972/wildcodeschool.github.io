@@ -262,4 +262,25 @@ video{
     }
 }
 
-
+.concept{
+    .concept-bandeau{
+    background-image: url(../img/poly/polyocre.png);
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+    .bloc-4-pictos{
+        margin-top: 20px;
+        img h3{
+            display: inline;
+        }
+        h3{
+            display: inline;
+            margin-left: 20px;
+        }
+        p{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+    }
+}
