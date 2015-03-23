@@ -8,42 +8,21 @@ permalink: /qui-sommes-nous/
   <h1 class="text-center">Qui sommes-nous ?</h1>
 
   <div class="row">
-    <div class="col-sm-3 text-center">
-      <img src="/img/portraits/Anna.png" class="img-responsive center-block" >
-      <h3>Anna<br>STÉPANOFF</h3>
-      <h4>Directrice</h4>
-      <p>Description du poste sur quelques lignes, (pas trop long)</p>
-      <a href="#" target="_blank"><img src="/img/socials/mail-32.png"></a>
-      <a href="https://twitter.com/AnnaStpnoff" target="_blank"><img src="/img/socials/twitter-32.png"></a>
-    </div>
 
-    <div class="col-sm-3 text-center">
-      <img src="/img/portraits/Romain.png" class="img-responsive center-block" >
-      <h3>Romain<br>COEUR</h3>
-      <h4>Formateur</h4>
-        <p>Description du poste sur quelques lignes, (pas trop long)</p>
-        <a href="#" target="_blank"><img src="/img/socials/mail-32.png"></a>
-        <a href="https://twitter.com/RomainCoeur" target="_blank"><img src="/img/socials/twitter-32.png"></a>
-    </div>
+    {% for qui in site.data.qui-sommes-nous %}
+      <div class="col-sm-3 col-xs-6 text-center">
+        <img src="/img/portraits/{{ qui.prenom }}.png" class="img-responsive center-block">
+        <h3>{{ qui.prenom }}</h3>
+        <h3>{{ qui.nom }}</h3>
+        <h4>{{ qui.status }}</h4>
+        <p>{{ qui.description }}</p>
+        <a href="mailto:{{ qui.courriel }}" target="_blank"><img src="/img/socials/mail-32.png"></a>
+        <a href="https://twitter.com/{{ qui.twitter }}" target="_blank"><img src="/img/socials/twitter-32.png"></a>
+      </div>
+    {% endfor %}
 
-    <div class="col-sm-3 text-center">
-      <img src="/img/portraits/Emilien.png" class="img-responsive center-block" >
-      <h3>Emilien<br>AH-KIEM</h3>
-      <h4>Formateur</h4>
-        <p>Description du poste sur quelques lignes, (pas trop long)</p>
-        <a href="#" target="_blank"><img src="/img/socials/mail-32.png"></a>
-        <a href="https://twitter.com/Em_hack" target="_blank"><img src="/img/socials/twitter-32.png"></a>
-    </div>
-
-    <div class="col-sm-3 text-center">
-      <img src="/img/portraits/Caroline.png" class="img-responsive center-block" >
-      <h3>Caroline<br>FOUCAULT</h3>
-      <h4>Webmarketrice</h4>
-        <p>Description du poste sur quelques lignes, (pas trop long)</p>
-        <a href="#" target="_blank"><img src="/img/socials/mail-32.png"></a>
-        <a href="https://twitter.com/CaroF2307" target="_blank"><img src="/img/socials/twitter-32.png"></a>
-    </div>
   </div>
+
 
   <div class="row">
     <div class="col-xs-12">
