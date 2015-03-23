@@ -3,67 +3,57 @@ layout: page
 permalink: /evenements/
 ---
 
-<h1 class="text-center">Les évenements</h1>
+<div class="evenements">
 
-<div class="row">
-  <div class="col-sm-6">
-    <h2>Wild Events</h2>
-    <p>L'école organise régulièrement des évènements : meetup, hackathons, portes ouvertes, journées thématiques....<br>Suivez notre actualité en vous inscrivant pour recevoir notre newsletter, suivez nous sur les réseaux sociaux.</p>
-  </div>
-  <div class="col-sm-6">
-    <img src="/img/evenements.png" class="img-responsive center-block">
-  </div>
-</div>
+  <h1 class="text-center">Les évenements</h1>
 
-<h2>À venir</h2>
-
-<div class="row">
-
-  <div class="col-sm-6">
-    <h2 class="text-center">Meetup</h2>
-    <img src="/img/meetup-1.png" class="img-responsive center-block">
-    <p>Lundi 30 mars / 18h-20h / École, La Loupe</p>
-    <p>Accès gratuit</p>
-    <p>Atelier de code ouvert à tous et gratuit. Rencontre, présentation de l'école et des projets des élèves.</p>
-    <p class="text-center"><a target="_blank" href="http://www.meetup.com/WildCodeMeetup/" class="btn btn-info" role="button">Inscription Meetup</a></p>
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Wild Events</h2>
+      <p>L'école organise régulièrement des évènements : meetup, hackathons, portes ouvertes, journées thématiques....<br>Suivez notre actualité en vous inscrivant pour recevoir notre newsletter, suivez nous sur les réseaux sociaux.</p>
+    </div>
+    <div class="col-sm-6">
+      <img src="/img/evenements/evenements.png" class="img-responsive center-block">
+    </div>
   </div>
 
-  <div class="col-sm-6">
-    <h2 class="text-center">Hackathon : E-agriculture</h2>
-    <img src="/img/e-agriculture.png" class="img-responsive center-block">
-    <p>du 12 au 14 juin / à partir de 19h / Comice, La Loupe</p>
-    <p>Accès gratuit</p>
-    <p>24h de code dans le cadre du comice départemental. Bienvenu aux porteurs de projets, graphistes, codeurs...</p>
-    <p class="text-center"><a target="_blank" href="" class="btn btn-info" role="button">...Prochainement...</a></p>
+  <h2>À venir</h2>
+
+    <div class="row">
+
+      {% for evenement in site.data.evenements %}
+
+        <div class="col-sm-6">
+          <h2 class="text-center">{{ evenement.titre }}</h2>
+          <img src="/img/evenements/{{ evenement.photo }}.png" class="img-responsive center-block">
+          <p class="text-center">{{ evenement.date }} / {{ evenement.heure }} / {{ evenement.lieu }}</p>
+          <p class="text-center"><span class="label label-default">{{ evenement.acces }}</span></p>
+          <p>{{ evenement.description }}</p>
+
+          <p class="text-center"><a target="_blank" href="{{ evenement.URL }}" class="btn btn-info" role="button">{{ evenement.bouton }}</a></p>
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+
+  <h2>Passés</h2>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="http://placehold.it/380x157" class="img-responsive center-block">
+    </div>
+
+    <div class="col-sm-4">
+      <img src="http://placehold.it/380x157" class="img-responsive center-block">
+    </div>
+
+    <div class="col-sm-4">
+      <img src="http://placehold.it/380x157" class="img-responsive center-block">
+    </div>
+
+    
   </div>
 
-</div>
-
-<h2>Passés</h2>
-
-<div class="row">
-  <div class="col-sm-2">
-    <img src="http://placehold.it/157x157" class="img-responsive center-block">
-  </div>
-
-  <div class="col-sm-2">
-    <img src="http://placehold.it/157x157" class="img-responsive center-block">
-  </div>
-
-  <div class="col-sm-2">
-    <img src="http://placehold.it/157x157" class="img-responsive center-block">
-  </div>
-
-  <div class="col-sm-2">
-    <img src="http://placehold.it/157x157" class="img-responsive center-block">
-  </div>
-
-  <div class="col-sm-2">
-    <img src="http://placehold.it/157x157" class="img-responsive center-block">
-  </div>
-
-  <div class="col-sm-2">
-    <img src="http://placehold.it/157x157" class="img-responsive center-block">
-  </div>
-  
 </div>

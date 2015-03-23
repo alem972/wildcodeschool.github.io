@@ -8,6 +8,10 @@ navbar
 */
 
 nav{
+    .je-postule-btn{
+        background-color: #000;
+        font-weight:bold;
+    }
     .navbar-brand{
         font-family: "CEL";
     }
@@ -175,7 +179,7 @@ blockquote h2, h3{
     font-weight: bold;
 }
 
-.evenements{
+.evenements-a-venir{
     background: url(../img/event.png);
     background-repeat: repeat-x;
     background-position: center center;
@@ -279,7 +283,7 @@ video{
     }
 }
 .projets-des-eleves{
-    img{
+    .projets{
         border:1px solid #EDEDED;
         margin-bottom: 10px; 
     }

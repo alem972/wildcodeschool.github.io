@@ -1,0 +1,32 @@
+# Évenements à venir
+
+- titre: "Meetup"
+  date: "Lundi 20 mars 2015"
+  heure: "18h-20h"
+  lieu: "Wild Code School, La Loupe"
+  acces: "Accès gratuit"
+  description: "Atelier de code ouvert à tous et gratuit. Rencontre, présentation de l'école et des projets des élèves."
+  URL: "http://www.meetup.com/WildCodeMeetup/"
+  bouton: "Inscription Meetup"
+  photo: "meetup-1"
+
+- titre: "Hackathon : E-agriculture"
+  date: "Du 12 au 14 juin 2015"
+  heure: "à partir de 19h"
+  lieu: "Comice, La Loupe"
+  acces: "Accès gratuit"
+  description: "24h de code dans le cadre du comice départemental. Bienvenu aux porteurs de projets, graphistes, codeurs..."
+  URL: "http://wildhackathon.fr/"
+  bouton: "Inscription ..."
+  photo: "e-agriculture"
+
+# - titre: "Titre"
+#   date: "Date"
+#   heure: "Heure"
+#   lieu: "Lieu"
+#   acces: "Accès"
+#   description: "Description"
+#   URL: "http://www.google.fr"
+#   bouton: "Inscription ..."
+#   photo: ""
+
