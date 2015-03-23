@@ -208,12 +208,6 @@ video{
 /* Page Pratique/Lieu */
 
 .lieu {
-    .image1 {
-        padding-bottom: 10px;
-    }
-    .image2 {
-        padding: 10px 0px 10px 0px;
-    }
     p {
         margin-bottom: 0px;
         padding: 5px 0px 5px 0px;
@@ -298,5 +292,10 @@ video{
     background-image: url(../img/poly/polygris.png);
     padding-top:30px;
     padding-bottom:30px;
+    }
+}
+.qui-sommes-nous{
+    .portrait{
+        padding-top: 30px;
     }
 }
