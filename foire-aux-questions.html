@@ -3,7 +3,26 @@ layout: page
 permalink: /foire-aux-questions/
 ---
 <div class="faq">
+
   <h1>Foire Aux Questions</h1>
 
-  EN ATTENTE DE CONTENU
+
+
+  <div class="row">
+
+    {% for faq in site.data.faqs %}
+
+      <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{ faq.question }}</h3>
+          </div>
+          <div class="panel-body">
+            {{ faq.reponse }}
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </div>
+
 </div>
