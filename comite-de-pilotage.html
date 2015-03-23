@@ -13,12 +13,12 @@ permalink: /comite-de-pilotage/
 
   <div class="row">
 
-    {% for comite in site.data.comite-de-pilotage %}
+    {% for membre in site.data.membres %}
       <div class="col-sm-3 col-xs-6">
         <img src="http://placehold.it/285x300" class="img-responsive center-block">
 <!--         <img src="/img/portraits/comite-de-pilotage/{{ PHOTO A AJOUTER }}.png" class="img-responsive center-block"> -->
-        <h3>{{ comite.prenom }}<br>{{ comite.nom }}</h3>
-        <p>{{ comite.description }}</p>
+        <h3>{{ membre.prenom }}<br>{{ membre.nom }}</h3>
+        <p>{{ membre.description }}</p>
       </div>
     {% endfor %}
 

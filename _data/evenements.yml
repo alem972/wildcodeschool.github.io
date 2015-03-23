@@ -1,17 +1,8 @@
 # Évenements à venir
 
-- titre: "Meetup"
-  date: "Lundi 20 mars 2015"
-  heure: "18h-20h"
-  lieu: "Wild Code School, La Loupe"
-  acces: "Accès gratuit"
-  description: "Atelier de code ouvert à tous et gratuit. Rencontre, présentation de l'école et des projets des élèves."
-  URL: "http://www.meetup.com/WildCodeMeetup/"
-  bouton: "Inscription Meetup"
-  photo: "meetup-1"
-
 - titre: "Hackathon : E-agriculture"
   date: "Du 12 au 14 juin 2015"
+  encours: true
   heure: "à partir de 19h"
   lieu: "Comice, La Loupe"
   acces: "Accès gratuit"
@@ -20,6 +11,104 @@
   bouton: "Inscription ..."
   photo: "e-agriculture"
 
+- titre: "Meetup"
+  date: "Lundi 20 mars 2015"
+  encours: true
+  heure: "18h-20h"
+  lieu: "Wild Code School, La Loupe"
+  acces: "Accès gratuit"
+  description: "Atelier de code ouvert à tous et gratuit. Rencontre, présentation de l'école et des projets des élèves."
+  URL: "http://www.meetup.com/WildCodeMeetup/"
+  bouton: "Inscription Meetup"
+  photo: "meetup-1"
+
+- titre: "Hackathon : Volant"
+  date: "Du 1 au 2 février 2015"
+  encours: false
+  heure: "à partir de 19h"
+  lieu: "WCS, La Loupe"
+  acces: "Accès gratuit"
+  description: "24h de code pour créer une application manipulant une API GPS et météo."
+  URL: "http://wildhackathon.fr/"
+  bouton: "TEST"
+  photo: "hackathon-volant"
+
+- titre: "Semaine européenne du code"
+  date: "11 octobre 2014"
+  encours: false
+  heure: "de 9h30 à 18h"
+  lieu: "WCS, La Loupe"
+  acces: "Accès gratuit"
+  description: "Un atelier d'initiation à la programmation pour les enfants de 6 à 16 ans (9h30-12h). Un atelier de bricolage informatique pour tous à partir de 6 ans (14h-18h)."
+  URL: "http://wildhackathon.fr/"
+  bouton: "TEST"
+  photo: "semaine-europeenne"
+
+- titre: "Week-end d'intégration"
+  date: "4 octobre 2014"
+  encours: false
+  heure: "à partir de 8h"
+  lieu: "WCS, La Loupe"
+  acces: "Accès élèves"
+  description: "Table ronde des partenaires, table ronde des professionnels du numérique, recruteurs potentiels, activité en ville (prévoir de bonnes chaussures)."
+  URL: "http://wildcodeschool.fr/"
+  bouton: ""
+  photo: "weekend-d-integration"
+
+- titre: "Week-end d'intégration"
+  date: "5 octobre 2014"
+  encours: false
+  heure: "à partir de 13h30"
+  lieu: "WCS, La Loupe"
+  acces: "Accès élèves"
+  description: "On se retrouve à l'école pour partir ensemble en balade dans la forêt Mosseuse près de la Ferté-Vidame (prévoir de bonnes chaussures), pique-nique sur place (apportez de la nourriture / des boissons à partager)."
+  URL: "http://wildcodeschool.fr/"
+  bouton: ""
+  photo: "weekend-d-integration-balade"
+
+
+- titre: "Atelier Déco"
+  date: "3 octobre 2014"
+  encours: false
+  heure: "à partir de 9h30"
+  lieu: "WCS, La Loupe"
+  acces: "Accès élèves"
+  description: "Un premier atelier déco en partenariat avec un collectif de jeunes designers Rusch."
+  URL: "http://wildcodeschool.fr/"
+  bouton: ""
+  photo: "collectif-RUSCH"
+
+- titre: "Pré-rentrée"
+  date: "29 septembre 2014"
+  encours: false
+  heure: "à partir de 19h"
+  lieu: "WCS, La Loupe"
+  acces: "Accès élèves"
+  description: "Commencons à faire connaissance."
+  URL: "http://wildcodeschool.fr/"
+  bouton: ""
+  photo: "pre-rentree"
+
+
+
+#--------------------------------------------# 
+# Éditer les evenements de la page evenements #
+#--------------------------------------------#------
+#
+# Pas de limitation du nombre d'évenements 
+#
+# Merci de respecter le format .png pour les photo
+# et n'entrez que le nom de la photo le .png est ajouté
+# automatiquement.
+#
+# Les évenements sont affichés dans l'ordre 1er en haut
+
+
+
+#--------#
+# Exemple #
+#--------#-----------------------------------------
+#    
 # - titre: "Titre"
 #   date: "Date"
 #   heure: "Heure"

@@ -2,11 +2,8 @@
 layout: page
 permalink: /evenements/
 ---
-
 <div class="evenements">
-
   <h1 class="text-center">Les évenements</h1>
-
   <div class="row">
     <div class="col-sm-6">
       <h2>Wild Events</h2>
@@ -16,44 +13,42 @@ permalink: /evenements/
       <img src="/img/evenements/evenements.png" class="img-responsive center-block">
     </div>
   </div>
-
   <h2>À venir</h2>
-
     <div class="row">
-
       {% for evenement in site.data.evenements %}
+        {% if evenement.encours == true %}
 
-        <div class="col-sm-6">
-          <h2 class="text-center">{{ evenement.titre }}</h2>
-          <img src="/img/evenements/{{ evenement.photo }}.png" class="img-responsive center-block">
-          <p class="text-center">{{ evenement.date }} / {{ evenement.heure }} / {{ evenement.lieu }}</p>
-          <p class="text-center"><span class="label label-default">{{ evenement.acces }}</span></p>
-          <p>{{ evenement.description }}</p>
+          <div class="col-sm-6">
+            <h2 class="text-center">{{ evenement.titre }}</h2>
+            <a target="_blank" href="{{ evenement.URL }}"><img src="/img/evenements/{{ evenement.photo }}.png" class="img-responsive center-block"></a>
+            <p class="text-center">{{ evenement.date }} / {{ evenement.heure }} / {{ evenement.lieu }}</p>
 
-          <p class="text-center"><a target="_blank" href="{{ evenement.URL }}" class="btn btn-info" role="button">{{ evenement.bouton }}</a></p>
-        </div>
-
+            <p>{{ evenement.date-de-fin }}</p>
+            <p class="text-center"><span class="label label-default">{{ evenement.acces }}</span></p>
+            <p>{{ evenement.description }}</p>
+            <p class="text-center"><a target="_blank" href="{{ evenement.URL }}" class="btn btn-info" role="button">{{ evenement.bouton }}</a></p>
+          </div>
+        {% endif %}
       {% endfor %}
-
     </div>
-
 
   <h2>Passés</h2>
 
   <div class="row">
-    <div class="col-sm-4">
-      <img src="http://placehold.it/380x157" class="img-responsive center-block">
-    </div>
+    {% for evenement in site.data.evenements %}
+      {% if evenement.encours == false %}
 
-    <div class="col-sm-4">
-      <img src="http://placehold.it/380x157" class="img-responsive center-block">
-    </div>
-
-    <div class="col-sm-4">
-      <img src="http://placehold.it/380x157" class="img-responsive center-block">
-    </div>
-
-    
+        <div class="col-sm-4">
+          <h2 class="text-center">{{ evenement.titre }}</h2>
+          <a target="_blank" href="{{ evenement.URL }}">
+          <img src="/img/evenements/{{ evenement.photo }}.png" class="img-responsive center-block">
+          </a>
+          <p class="text-center">{{ evenement.date }} / {{ evenement.heure }} / {{ evenement.lieu }}</p>
+          <p>{{ evenement.date-de-fin }}</p>
+          <p class="text-center"><span class="label label-default">{{ evenement.acces }}</span></p>
+          <p>{{ evenement.description }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
-
 </div>

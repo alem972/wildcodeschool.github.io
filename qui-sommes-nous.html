@@ -2,26 +2,20 @@
 layout: page
 permalink: /qui-sommes-nous/
 ---
-
 <div class="qui-sommes-nous">
-
   <h1 class="text-center">Qui sommes-nous ?</h1>
-
   <div class="row">
-
-    {% for qui in site.data.qui-sommes-nous %}
+    {% for equipe in site.data.equipes %}
       <div class="col-sm-3 col-xs-6 text-center">
-        <img src="/img/portraits/qui-sommes-nous/{{ qui.prenom }}.png" class="img-responsive center-block portrait" alt="Photo portrait de {{ qui.prenom }} {{ qui.nom }}">
-        <h3>{{ qui.prenom }}<br>{{ qui.nom }}</h3>
-        <h4>{{ qui.status }}</h4>
-        <p>{{ qui.description }}</p>
-        <a href="mailto:{{ qui.courriel }}" target="_blank"><img src="/img/socials/mail-32.png"></a>
-        <a href="https://twitter.com/{{ qui.twitter }}" target="_blank"><img src="/img/socials/twitter-32.png"></a>
+        <img src="/img/portraits/equipe-sommes-nous/{{ equipe.prenom }}.png" class="img-responsive center-block portrait" alt="Photo portrait de {{ equipe.prenom }} {{ equipe.nom }}">
+        <h3>{{ equipe.prenom }}<br>{{ equipe.nom }}</h3>
+        <h4>{{ equipe.status }}</h4>
+        <p>{{ equipe.description }}</p>
+        <a href="mailto:{{ equipe.courriel }}" target="_blank"><img src="/img/socials/mail-32.png"></a>
+        <a href="https://twitter.com/{{ equipe.twitter }}" target="_blank"><img src="/img/socials/twitter-32.png"></a>
       </div>
     {% endfor %}
-
   </div>
-
 
   <div class="row">
     <div class="col-xs-12">
