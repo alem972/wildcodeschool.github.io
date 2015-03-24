@@ -4,6 +4,7 @@
   description: "Description du poste sur quelques lignes."
   courriel: "stepanoff.anna@gmail.com" 
   twitter: "AnnaStpnoff"
+  vcard: "annas"
 
 - prenom: "Romain"
   nom: "COEUR"
@@ -11,6 +12,7 @@
   description: "Description du poste sur quelques lignes."
   courriel: "coeurro@gmail.com"
   twitter: "RomainCoeur"
+  vcard: "romainc"
 
 - prenom: "Emilien"
   nom: "AH-KIEM"
@@ -18,6 +20,7 @@
   description: "Description du poste sur quelques lignes."
   courriel: "emilien.ak@gmail.com"
   twitter: "Em_hack"
+  vcard: "emilienak"
 
 - prenom: "Caroline"
   nom: "FOUCAULT"
@@ -25,3 +28,4 @@
   description: "Description du poste sur quelques lignes."
   courriel: "caroline@wildcodeschool.fr"
   twitter: "CaroF2307"
+  vcard: "carolinef"

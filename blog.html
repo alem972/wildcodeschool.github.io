@@ -1,26 +1,26 @@
 ---
 layout: default
 ---
-<div class="container">
-  <div class="post text-center">
-    <h1 class="text-center">Articles du Blog</h1>
+<div class="blog">
+  <div class="container">
+    <div class="post text-center">
+      <h1 class="text-center">ARTICLES DU BLOG</h1>
+    </div>
+
+    <div class="col-md-10 col-md-offset-1">
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </li>
+          <br>
+        {% endfor %}
+      </ul>
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src="/img/socials/rss-32.png" class="center-block"></a>
+      <p class="rss-subscribe text-center"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Abonnez-vous à notre flux RSS</a></p>
+    </div>
   </div>
-
-  <div class="col-md-10 col-md-offset-1">
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-        <br>
-      {% endfor %}
-    </ul>
-    <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src="/img/socials/rss-32.png" class="center-block"></a>
-    <p class="rss-subscribe text-center"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Abonnez-vous à notre flux RSS</a></p>
-  </div>
-
 </div>

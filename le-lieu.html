@@ -3,15 +3,52 @@ layout: page
 permalink: /le-lieu/
 ---
 <div class="lieu">
-  <h1 class="text-center">Le lieu</h1>
+  <h1 class="text-center">LE LIEU</h1>
     <div class="row">
-      <div class="col-xs-12">
-        <img src="/img/panneau-laloupe.png" class="img-responsive center-block">
 
-          <p>Fini la pollution, le trafic, le bruit et le stress environnant. Dans le Perche, le numérique est dans la nature. Vous trouverez à deux pas de l’école un centre équestre, des forêts avec leurs biches et champignons, des champs et leurs vaches... Vous y trouverez aussi la fibre optique et le très haut débit, une pépinière d’entreprise et un espace de coworking branché. Le Perche est une région verte dernière génération.</p>
-
-        <img src="/img/map-google-wcs.png" class="img-responsive center-block">
+      <div class="col-sm-6">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/g3DWOVjA5kM" frameborder="0" allowfullscreen></iframe>
       </div>
+      <div class="col-sm-6">
+         <p>Fini la pollution, le trafic, le bruit et le stress environnant. Dans le Perche, le numérique est dans la nature. Vous trouverez à deux pas de l’école un centre équestre, des forêts avec leurs biches et champignons, des champs et leurs vaches... </p>
+         <p>Vous y trouverez aussi la fibre optique et le très haut débit, une pépinière d’entreprise et un espace de coworking branché. Le Perche est une région verte dernière génération.</p>
+         <br>
+         <p class="text-center"><a href="https://www.google.fr/maps/dir//Wild+Code+School,+18+Rue+de+la+Gare,+28240+La+Loupe,+France/@48.4735237,1.0122397,18z/data=!4m12!1m3!3m2!1s0x0000000000000000:0x44cf293e5870383a!2sWild+Code+School!4m7!1m0!1m5!1m1!1s0x47e3c1f7f7d69b13:0x44cf293e5870383a!2m2!1d1.01206!2d48.473529" class="btn btn-info" role="button" target="_blank">Calculez votre itinéraire</a></p>
+
+       </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col-xs-12" id="googleMap">
+          <!-- Google Map API -->
+          <script src="http://maps.googleapis.com/maps/api/js"></script>
+          <script>
+            var myCenter=new google.maps.LatLng(48.473529,1.01206);
+            var marker;
+
+            function initialize()
+            {
+            var mapProp = {
+              center:myCenter,
+              zoom:6,
+              mapTypeId:google.maps.MapTypeId.ROADMAP
+              };
+
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker=new google.maps.Marker({
+              position:myCenter,
+              animation:google.maps.Animation.BOUNCE
+              });
+
+            marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+          </script>
+          <!-- END Google Map API -->
+          </div>
+        </div>
     </div>
 
   <div class="row locaux">
@@ -19,9 +56,8 @@ permalink: /le-lieu/
       <img src="/img/locaux-drone.png" class="center-block img-responsive">
     </div>
 
-
     <div class="col-sm-6">
-      <h2>Locaux</h2>
+      <h2 class="text-center">Locaux</h2>
       <p>La deuxième promotion de l'école sera installée dans les locaux de l'ancien collège de La Loupe. Le gymnase, actuellement en travaux sera entiérement rréhabilité pour accueillir la formation:</p>
       <ul>
         <li>espace en open-space</li>
@@ -31,13 +67,12 @@ permalink: /le-lieu/
         <li>...</li>
       </ul>
     </div>
-
   </div>
 
   <div class="row hebergement">
 
     <div class="col-sm-6">
-      <h2>Hébergement</h2>
+      <h2 class="text-center">Hébergement</h2>
       <p>Pour héberger les élèves venant de loin, l'école propose des logements F4 en colocation à 10 min à pied de l'école. chaque étudiant a sa propre chambre et partage avec deux autres étudiants un salon, une cuisine et une salle de bain pour 250€/mois (charges comprises). Les logements sont éligibles aux aides APL. Vous trouverez également une liste de «logements chez l’habitant» au même tarif.</p>
     </div>
 

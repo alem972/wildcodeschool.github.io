@@ -3,16 +3,17 @@ layout: page
 permalink: /qui-sommes-nous/
 ---
 <div class="qui-sommes-nous">
-  <h1 class="text-center">Qui sommes-nous ?</h1>
+  <h1 class="text-center">QUI SOMMES-NOUS ?</h1>
   <div class="row">
     {% for equipe in site.data.equipes %}
       <div class="col-sm-3 col-xs-6 text-center">
-        <img src="/img/portraits/equipe-sommes-nous/{{ equipe.prenom }}.png" class="img-responsive center-block portrait" alt="Photo portrait de {{ equipe.prenom }} {{ equipe.nom }}">
+        <img src="/img/portraits/qui-sommes-nous/{{ equipe.prenom }}.png" class="img-responsive center-block portrait" alt="Photo portrait de {{ equipe.prenom }} {{ equipe.nom }}">
         <h3>{{ equipe.prenom }}<br>{{ equipe.nom }}</h3>
         <h4>{{ equipe.status }}</h4>
         <p>{{ equipe.description }}</p>
         <a href="mailto:{{ equipe.courriel }}" target="_blank"><img src="/img/socials/mail-32.png"></a>
         <a href="https://twitter.com/{{ equipe.twitter }}" target="_blank"><img src="/img/socials/twitter-32.png"></a>
+        <a href="http://wildcodeschool.fr/vcard/{{ equipe.vcard }}.html" target="_blank"><img src="/img/socials/vcard-32.png"></a>
       </div>
     {% endfor %}
   </div>

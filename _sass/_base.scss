@@ -64,7 +64,6 @@ p, li{
 }
 
 
-
 /**
  * Basic styling
  */
@@ -199,8 +198,6 @@ video{
     box-shadow: 0px 0px 23px 2px rgba(184,184,184,1);
 }
 
-.disent-de-nous{}
-
 .ilsparlentdenous img{
     width: 85px;
     margin: 5px 5px 5px 5px;
@@ -213,6 +210,9 @@ video{
 /* Page Pratique/Lieu */
 
 .lieu {
+    h1{
+        font-weight: bold;
+    }
     p {
         margin-bottom: 0px;
         padding: 5px 0px 5px 0px;
@@ -220,38 +220,59 @@ video{
     h2 {
         margin-top: 10px;
     }
-    .locaux {
-        padding: 5px 0px 5px 0px;
+    #googleMap{
+        margin-top:10px;
+        margin-bottom:10px;
+        width:100%;
+        height:350px;
+        border-radius: 6px;
     }
-    .hebergement {
-        padding: 5px 0px 5px 0px;
+    iframe{
+        border-radius: 6px;
     }
-
 }
 
 .faq {
     h1 {
-        text-align: center;
+        font-weight: bold;
     }
 }
 
-.kitpresse {
+.kit-de-presse {
     h1 {
-        text-align: center;
+        font-weight: bold;
+    }
+    video {
+        border-radius: 6px
     }
 }
 
-.partenaire {
+.devenez-partenaires {
     h1 {
-        text-align: center;
+        font-weight: bold;
     }
 }
 
 .promo2014 {
+    h1{
+        font-weight: bold;
+    }
+    .portrait{
+        &:hover{
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+        }
+    }
   
 }
 
 .pilotage {
+    h1{
+        font-weight: bold;
+    }
     h3 {
         text-align: center;
     }
@@ -262,8 +283,11 @@ video{
 }
 
 .concept{
+    h1{
+        font-weight: bold;
+    }
     .concept-bandeau{
-    background-image: url(../img/poly/polyocre.png);
+    background-image: url(../img/poly/polybleuclair.png);
     padding-top:30px;
     padding-bottom:30px;
     }
@@ -284,23 +308,90 @@ video{
     }
 }
 .projets-des-eleves{
+    h1{
+        font-weight: bold;
+    }
     .projets{
         border:1px solid #EDEDED;
         margin-bottom: 10px; 
+        &:hover{
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+        }
     }
 }
 .debouches{
-    p{
-        padding-top: 25px;
+    h1{
+        font-weight: bold;
+    }
+    .bloc-txt{
+        padding-top: 30px;
+    }
+    .chiffres-sheandy{
+        font-family: "sheandy";
+        font-size: 40px;
+        color: #FFF;
     }
     .bandeau-debouches{
-    background-image: url(../img/poly/polygris.png);
+    background-image: url(../img/poly/polybleu.png);
     padding-top:30px;
     padding-bottom:30px;
+    color: #FFF;
     }
 }
 .qui-sommes-nous{
+    h1{
+        font-weight: bold;
+    }
     .portrait{
         padding-top: 30px;
     }
+}
+.programme{
+    h1{
+        font-weight: bold;
+    }
+}
+.devenir-eleve{
+    h1{
+        font-weight: bold;
+    }
+}
+.evenements{
+    h1{
+        font-weight: bold;
+    }
+}
+.du-numerique-a-l-ecole{
+    h1{
+        font-weight: bold;
+    }
+}
+.deposer-un-projet{
+    h1{
+        font-weight: bold;
+    }
+}
+.wild-heros{
+    h1{
+        font-weight: bold;
+    }    
+}
+.mentors{
+    h1{
+        font-weight: bold;
+    }        
+}
+.blog{
+    h1{
+        font-weight: bold;
+    }       
+}
+.candidats{
+    h1{
+        font-weight: bold;
+    }      
 }
