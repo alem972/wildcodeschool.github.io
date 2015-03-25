@@ -141,7 +141,7 @@ body {
 .trois{
     background-image: url(../img/poly/polybleu.png);
     .sheandytroischiffres p{
-        padding-top: 10px;
+        padding-top: 0px;
         font-family: "sheandy";
         font-size: 70px;
         color: #FFF;
@@ -149,7 +149,7 @@ body {
     .troischiffres p{
         font-size: 20px;
         margin-top: -20px;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
         color:#FFF;
     }
 }
@@ -231,6 +231,7 @@ video{
 .faq {
     h1 {
         font-weight: bold;
+        margin-bottom: 20px;
     }
 }
 
@@ -370,6 +371,17 @@ video{
     h1{
         font-weight: bold;
     }
+    .img-evenement{
+        border:1px solid #EDEDED;
+        margin-bottom: 10px; 
+        &:hover{
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+        }
+    }
 }
 .du-numerique-a-l-ecole{
     h1{
@@ -394,6 +406,7 @@ video{
 .blog{
     h1{
         font-weight: bold;
+        margin-bottom: 20px;
     }       
 }
 .candidats{

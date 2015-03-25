@@ -6,12 +6,14 @@ permalink: /foire-aux-questions/
   <h1 class="text-center">FOIRE AUX QUESTIONS</h1>
   <div class="row">
     {% for faq in site.data.faqs %}
-      <div class="panel panel-warning">
-          <div class="panel-heading">
-            <h3 class="panel-title">{{ faq.question }}</h3>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{ faq.question }}</h3>
+            </div>
+            <div class="panel-body">
+              {{ faq.reponse }}
           </div>
-          <div class="panel-body">
-            {{ faq.reponse }}
         </div>
       </div>
     {% endfor %}
