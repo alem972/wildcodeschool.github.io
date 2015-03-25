@@ -202,10 +202,6 @@ video{
     width: 85px;
     margin: 5px 5px 5px 5px;
 }
-.post{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
 /* Page Pratique/Lieu */
 
@@ -244,6 +240,16 @@ video{
     }
     video {
         border-radius: 6px
+    }
+    .bloc-droit{
+        background-image: url(../img/poly/polyorange.png);
+        color: #FFF;
+        h2{
+            margin-top: -10px;
+            margin-bottom: -5px;
+            font-family: "sheandy";
+            font-size: 80px;
+        }
     }
 }
 
@@ -394,4 +400,15 @@ video{
     h1{
         font-weight: bold;
     }      
+}
+
+.btn-vert {
+    color: #FFF;
+    background-color: #569f56;
+    border-color: #569f56;
+    &:hover{
+        color: #FFF;
+        background-color: #508550;
+        border-color: #508550;
+    }
 }

@@ -14,5 +14,37 @@ layout: default
       {{ content }}
 
   </div>
+  <br>
+  <div class="container">
+
+    <div class="pull-left"> 
+      {% if page.previous.url %}
+        <a href="{{page.previous.url}}">
+        <button type="button" class="btn btn-vert btn-sm">
+          <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> {{page.previous.title}} 
+        </button>
+        </a>
+      {% endif %} 
+    </div>
+    <div class="pull-right"> 
+      {% if page.next.url %}
+        <a href="{{page.next.url}}">
+        <button type="button" class="btn btn-vert btn-sm">
+          {{page.next.title}} <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+        </button>
+        </a>
+      {% endif %} 
+    </div>
+  </div>
+  <br>
+  <div class="text-center"> 
+      <a href="/blog.html">
+      <button type="button" class="btn btn-vert btn-sm">
+        <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Retour à la liste de tous les articles
+      </button>
+      </a>
+  </div>
+
 
 </div>
+
