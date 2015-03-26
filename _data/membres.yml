@@ -1,19 +1,24 @@
 - prenom: "Laure"
   nom: "De la RAUDIERE"
   description: "Député de la 3e circonscription d'Eure et Loir, Maire de Saint Denis des Puits"
+  photo: "Laure"
 
 - prenom: "Franceline"
   nom: "FORTERRE-CHAPARD"
   description: "Sous-Préfet de l'arrondissement de Nogent-le-Rotrou"
+  photo: "Franceline"
 
 - prenom: "Mathieu"
   nom: "GUININ"
   description: "Responsable Education et Recherche HP France"
+  photo: "Mathieu"
 
 - prenom: "Éric"
   nom: "GERARD"
   description: "Maire de La Loupe, Président de la communauté de communes des Portes du Perche"
+  photo: "Eric"
 
 - prenom: "John"
   nom: "BILLARD"
   description: "Président Association des Maires Ruraux d'Eure et Loir, Vice-président AMRF, Membre au Conseil National du Numérique"
+  photo: "John"
