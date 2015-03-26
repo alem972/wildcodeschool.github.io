@@ -84,6 +84,18 @@ body{
         border-color: #dc0000;
     }
 }
+.btn-bleu{
+    color: #FFF;
+    background-color: #184264;
+    border-color: #184264;
+    border-radius: 15px;
+    &:hover{
+        color: #FFF;
+        background-color: #153e60;
+        border-color: #153e60;
+    }
+}
+
 
 .badge-FT{
     position: absolute;
