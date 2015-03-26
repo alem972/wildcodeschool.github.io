@@ -9,7 +9,7 @@ body{
     right: -175px;
     margin-top: 20px;
     border-radius: 0px;
-    box-shadow: -3px 3px 7px #969696;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
     &:hover{
         right: -55px;
     }
@@ -20,7 +20,7 @@ body{
     right: -190px;
     top: 120px;
     border-radius: 0px;
-    box-shadow: -3px 3px 7px #969696;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
     &:hover{
         right: -25px;
     }
@@ -34,7 +34,7 @@ body{
         background-color: #ff8a00;
         border-color: #ff8a00;
         color: #FFF;
-        box-shadow: -3px 3px 7px #969696;
+        box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
     }
     .dropdown-menu > li > a {
         color: #FFF;
