@@ -95,7 +95,7 @@ body {
     background-color: #f5f5f5;
     background-image: url(../img/poly/polybleu.png);
     ul li{
-        margin: 10px -5px 0px 10px;
+        margin: 0px -5px 0px 10px;
     }
     img{
         width: 45px;
@@ -103,7 +103,8 @@ body {
     .footerlogosheandy{
         font-family: "sheandy";
         font-size:90px;
-        margin-top: -58px;
+        margin-top: -41px;
+        margin-bottom: -18px;
         color: #FFF;
     }
     address{
@@ -120,7 +121,10 @@ body {
         font-family: "Vera";
         color: #FFF;
     }
-    .newsletter-footer{ margin-top: -30px; }
+    .newsletter-footer{
+        margin-top: 15px;
+        width: 230px;
+    }
 }
 
 
@@ -400,6 +404,14 @@ video{
 .deposer-un-projet{
     h1{
         font-weight: bold;
+        margin-bottom: 50px;
+    }
+    textarea{
+        height: 12em;
+        min-height: 12em;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
 }
 .wild-heros{
