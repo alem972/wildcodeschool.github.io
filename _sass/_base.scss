@@ -13,6 +13,40 @@ body{
         right: -55px;
     }
 }
+.btn-blog-partage{
+    position: fixed;
+    z-index: 101;
+    right: -190px;
+    top: 120px;
+    border-radius: 0px;
+    &:hover{
+        right: -25px;
+    }
+}
+
+.post{
+    .open > .dropdown-menu {
+        width: 210px;
+        border-radius: 0px;
+        margin-top: -1px;
+        background-color: #ff8a00;
+        border-color: #ff8a00;
+        color: #FFF;
+    }
+    .dropdown-menu > li > a {
+        color: #FFF;
+        &:hover{
+            text-decoration: none;
+            color: #000;
+            background-color: #f38300;
+        }
+        &:focus{
+            text-decoration: none;
+            color: #000;
+            background-color: #f38300;        
+        }
+    }
+}
 
 .btn-vert {
     color: #FFF;
@@ -22,6 +56,29 @@ body{
         color: #FFF;
         background-color: #508550;
         border-color: #508550;
+    }
+}
+.btn-orange{
+    color: #FFF;
+    background-color: #ff8a00;
+    border-color: #ff8a00;
+    border-radius: 0px;
+    &:hover{
+        color: #FFF;
+        background-color: #f38300;
+        border-color: #f38300;
+    }
+}
+
+.btn-rouge{
+    color: #FFF;
+    background-color: #ee0000;
+    border-color: #ee0000;
+    border-radius: 0px;
+    &:hover{
+        color: #FFF;
+        background-color: #dc0000;
+        border-color: #dc0000;
     }
 }
 

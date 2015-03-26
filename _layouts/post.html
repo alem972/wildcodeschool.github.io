@@ -15,6 +15,27 @@ layout: default
 
   </div>
   <br>
+
+  
+    <div class="btn-group btn-blog-partage">
+      <button type="button" class="btn btn-orange dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="glyphicon glyphicon-heart"></span> &nbsp; Partagez cet article <span class="caret"></span> &nbsp; &nbsp; &nbsp;
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="https://twitter.com/intent/tweet?text=&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Partagez sur Twitter">Twitter</a></li>
+        <li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Partagez sur Facebook">Facebook</a></li>
+        <li><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Partagez sur Google+">Google+</a></li>
+        <li><a href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&description={{ page.title }}" rel="nofollow" target="_blank" title="Partagez sur Pinterest">Pinterest</a></li>
+        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.title }}&source=<{{ site.url }}" rel="nofollow" target="_blank" title="Partagez sur LinkedIn">LinkedIn</a></li>
+        <li><a href="http://www.tumblr.com/share/link?url={{ site.url }}{{ page.url }}&name={{ page.title }}&description={{ page.title }}" rel="nofollow" target="_blank" title="Partagez sur Tumblr">Tumblr</a></li>
+        <li><a href="http://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Partagez sur Reedit">Reedit</a></li>
+      </ul>
+    </div>
+
+
+
+
+  <br>
   <div class="container">
 
     <div class="pull-left"> 
