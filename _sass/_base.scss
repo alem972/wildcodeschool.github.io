@@ -3,6 +3,16 @@ body{
     background-color: #F8F8F8;
 }
 
+.btn-nous-contacter{
+    position: fixed;
+    z-index: 101;
+    right: -175px;
+    margin-top: 20px;
+    border-radius: 0px;
+    &:hover{
+        right: -55px;
+    }
+}
 
 .badge-FT{
     position: absolute;
@@ -445,4 +455,14 @@ video{
         background-color: #508550;
         border-color: #508550;
     }
+}
+.je-m-inscris{
+    h1{
+        font-weight: bold;
+    }     
+}
+.nous-contacter{
+    h1{
+        font-weight: bold;
+    }     
 }
