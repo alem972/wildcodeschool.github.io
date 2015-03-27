@@ -486,7 +486,7 @@ video{
         margin-bottom: 20px;
     }
 }
-.devenir-eleve{
+.candidats{
     h1{
         font-weight: bold;
         margin-bottom: 20px;
@@ -518,7 +518,11 @@ video{
 .deposer-un-projet{
     h1{
         font-weight: bold;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     textarea{
         height: 12em;
@@ -546,11 +550,15 @@ video{
         margin-bottom: 20px;
     }       
 }
-.candidats{
+.formulaire-candidature{
     h1{
         font-weight: bold;
         margin-bottom: 20px;
-    }      
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 .je-m-inscris{
     h1{
@@ -562,5 +570,9 @@ video{
     h1{
         font-weight: bold;
         margin-bottom: 20px;
-    }     
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
