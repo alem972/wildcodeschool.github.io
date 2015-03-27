@@ -3,6 +3,8 @@ body{
     background-color: #F8F8F8;
 }
 
+
+
 .btn-nous-contacter{
     position: fixed;
     z-index: 101;
@@ -10,10 +12,14 @@ body{
     margin-top: 20px;
     border-radius: 0px;
     box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
+    width: 216px; /* fix chrome */
     &:hover{
         right: -55px;
     }
 }
+
+
+
 .btn-blog-partage{
     position: fixed;
     z-index: 101;
@@ -21,6 +27,7 @@ body{
     top: 120px;
     border-radius: 0px;
     box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
+    width: 231px; /* fix chrome */
     &:hover{
         right: -25px;
     }
