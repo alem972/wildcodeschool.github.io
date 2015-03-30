@@ -200,31 +200,19 @@ layout: default
     </div>
   </div>
 
-<!-- Blog -->
+  <!-- Blog -->
   <div class="container">
     <div class="page-header">
       <h2 class="text-center">Les derniers articles du blog</h2>
     </div>
     <div class="row">
-      <div class="col-sm-4">
-        <img src="//placehold.it/350x200/222222" class="img-responsive img-thumbnail center-block">
-          <p><strong>Du code au gouter : quand les enfants découvrent la programmation</strong></p>
-          <p>Depuis novembre, nous animons un atelier d’initiation à la programmation à l’école primaire du Thieulin : scratch, boucles, conditions, robotique et bien d’autres ingrédients au menu.
-          35 enfants participent à cet atelier hebdomadaire de deux heures dans le cadre des TAP (Temps d’Accueil Périscolaire), le vendredi après-midi....</p>
-      </div>
-
-      <div class="col-sm-4">
-        <img src="//placehold.it/350x200/444444" class="img-responsive img-thumbnail center-block">
-          <p><strong>Des bus sur des rails ? Mais ils sont fous !!</strong></p>
-          <p>Samuel, élève de la première promo, je découvre avec mes 27 autres camarades de l’école ma nouvelle mission: améliorer le système d‭’‬inscription aux bus de transports scolaires de la Communauté de Communes des Portes du Perche. Depuis mi-novembre, nous développons une application où chaque utilisateur pourra directement saisir ses .‭...</p>
-      </div>
-
-      <div class="col-sm-4">
-        <img src="//placehold.it/350x200/888888" class="img-responsive img-thumbnail center-block">
-          <p><strong>L'arrivée des défricheurs de code dans l'Ouest</strong></p>
-          <p>Bonjour à tous. Je m’appelle Samuel, j’ai 27 ans et je suis élève dans la toute nouvelle école numérique de La Loupe qui a ouvert ses portes en octobre dernier. Je fais donc parti des pionniers de cette aventure percheronne qui forme aux métiers du numérique. Ce blog est l’occasion pour moi de faire part de mon expérience mais aussi de vous donner un aperçu....</p>
-      </div>
-
+      {% for post in site.posts limit:3 %}
+        <div class="col-sm-4 blog-accueil">
+          <a href="{{ post.url }}"><p class="text-center"><strong>{{ post.title }}</strong></p></a>
+          <a href="{{ post.url }}">{{ post.excerpt }}</a>
+          <a href="{{ post.url }}"><p>{{ post.content | strip_html | truncatewords:60 }}</p></a>
+        </div>
+      {% endfor %}
     </div>
   </div>
 
