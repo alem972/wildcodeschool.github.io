@@ -13,3 +13,4 @@ github_username:  WildCodeSchool
 # Build settings
 markdown: kramdown
 timezone: Europe/Paris
+default_locale: "fr"

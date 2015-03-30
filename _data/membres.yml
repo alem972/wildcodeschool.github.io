@@ -8,11 +8,6 @@
   description: "Sous-Préfet de l'arrondissement de Nogent-le-Rotrou"
   photo: "Franceline"
 
-- prenom: "Mathieu"
-  nom: "GUININ"
-  description: "Responsable Education et Recherche chez HP France"
-  photo: "Mathieu"
-
 - prenom: "Éric"
   nom: "GERARD"
   description: "Maire de La Loupe, Président de la communauté de communes des Portes du Perche"
@@ -22,3 +17,8 @@
   nom: "BILLARD"
   description: "Président Association des Maires Ruraux d'Eure et Loir, Vice-président AMRF, Membre au Conseil National du Numérique"
   photo: "John"
+
+- prenom: "Mathieu"
+  nom: "GUININ"
+  description: "Responsable Education et Recherche chez HP France"
+  photo: "Mathieu"

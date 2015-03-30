@@ -40,19 +40,12 @@ layout: default
 
     <div class="pull-left"> 
       {% if page.previous.url %}
-        <a href="{{page.previous.url}}">
-        <button type="button" class="btn btn-bleu btn-sm">
-          <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> {{page.previous.title}} 
-        </button>
-        </a>
+        <a href="{{page.previous.url}}"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> {{page.previous.title}}</a>
       {% endif %} 
     </div>
     <div class="pull-right"> 
       {% if page.next.url %}
-        <a href="{{page.next.url}}">
-        <button type="button" class="btn btn-bleu btn-sm">
-          {{page.next.title}} <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-        </button>
+        <a href="{{page.next.url}}">{{page.next.title}} <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
         </a>
       {% endif %} 
     </div>
