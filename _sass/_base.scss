@@ -366,12 +366,29 @@ video{
             font-size: 80px;
         }
     }
+    .photos img{
+        padding-top: 30px;
+    }
+    .photos h2{
+        margin-bottom: -20px;
+    }
 }
 
 .devenez-partenaire {
-    h1 {
+    h1{
         font-weight: bold;
         margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    textarea{
+        height: 12em;
+        min-height: 12em;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -471,7 +488,7 @@ video{
         color: #FFF;
     }
     .bandeau-debouches{
-    background-image: url(../img/poly/polybleu.png);
+    background-image: url(../img/poly/polybleuclair.png);
     padding-top:30px;
     padding-bottom:30px;
     color: #FFF;
@@ -544,7 +561,11 @@ video{
     h1{
         font-weight: bold;
         margin-bottom: 20px;
-    }    
+    }
+    .logo-partenaire{
+        width: 120px;
+        margin: 50px;
+    }
 }
 .mentors{
     h1{

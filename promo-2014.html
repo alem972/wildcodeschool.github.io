@@ -23,7 +23,7 @@ permalink: /promo-2014/
     {% for eleve in site.data.promo-2014 %}
       <div class="col-sm-3 col-xs-6 text-center">
         <a href="http://www.doyoubuzz.com/{{ eleve.cv }}">
-          <img src="http://placehold.it/285x300" class="img-responsive portrait" alt="Photo portait de {{ eleves.prenom }} {{ eleves.nom }}">
+          <img src="/img/portraits/promo-2014/{{ eleve.photo }}.jpg" class="img-responsive portrait" alt="Photo portait de {{ eleve.prenom }} {{ eleve.nom }}">
         </a>
         <a href="http://www.doyoubuzz.com/{{ eleve.cv }}"><h4>{{ eleve.prenom }}<br>{{ eleve.nom }}<br>{{ eleve.age }} ans</h4></a>
       </div>

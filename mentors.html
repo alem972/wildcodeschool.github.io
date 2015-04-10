@@ -3,7 +3,24 @@ layout: page
 permalink: /mentors/
 ---
 <div class="mentors">
-  <h1 class="text-center">NOS MENTORS</h1>
+  <h1 class="text-center">MENTORS</h1>
+  <p>Les mentors sont des professionnels ou des entrepreneurs du numérique. Ils parrainent un ou plusieurs élèves de l’école qu’ils rencontrent plusieurs fois au cours de leur scolarité. Ils peuvent aussi animer un ou plusieurs ateliers à l’école. Le rôle des mentors est de faire découvrir aux élèves leur métier et de les guider dans l’acquisition des codes et des savoir-être du monde professionnel.</p>
+  <br>
+  <div class="row">
+    {% for mentor in site.data.mentors %}
+      <div class="col-sm-3 col-xs-6 text-center">
+        
+        <img src="/img/portraits/mentors/{{ mentor.photo }}.jpg" class="img-responsive center-block portrait" alt="Photo portrait de {{ mentor.prenom }} {{ mentor.nom }}">
 
-  à completer
+        <h3>{{ mentor.prenom }}<br>{{ mentor.nom }}</h3>
+        <h4>{{ mentor.societe }},<br>{{ mentor.ville }}</h4>
+       	<br>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="row text-center">
+  	<p><a href="/nous-contacter" class="btn btn-vert btn-lg" role="button">Et pourquoi pas vous?</a></p>
+  </div>
+
 </div>
