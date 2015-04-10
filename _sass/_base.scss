@@ -225,6 +225,36 @@ body {
         margin-top: 15px;
         width: 275px;
     }
+
+    /*MAILCHIMP*/
+
+    .email-news{
+        height: 34px;
+        border-radius: 5px 0px 0px 5px;
+        float: left;
+        display: inline;
+        width: 85%;
+  
+    }
+    .valider-news{
+        height: 34px;
+        display: inline;
+        border-radius: 0px 5px 5px 0px;
+        width: 15%;
+    }
+    .mce_inline_error{
+        display: none;
+    }
+    .mce-success-response.reponse{
+        display: none;
+    }
+    #mce-EMAIL{
+        text-align: center;
+    }
+    #mc_embed_signup {
+        background: none repeat scroll 0% 0% rgba(255, 255, 255, 0);
+    }
+
 }
 
 
@@ -430,16 +460,16 @@ video{
         margin-bottom: 20px;
     }
     .concept-bandeau{
-    background-image: url(../img/poly/polybleuclair.png);
-    background-repeat: repeat-x;
-    background-position: center center;
-    width: 100%;
-    padding-top:30px;
-    padding-bottom:30px;
-    margin-right:0%;
-    margin-left:0%;
-    position: absolute;
-    right: 0px;
+        background-image: url(../img/poly/polybleuclair.png);
+        background-repeat: repeat-x;
+        background-position: center center;
+        width: 100%;
+        padding-top:30px;
+        padding-bottom:30px;
+        margin-right:0%;
+        margin-left:0%;
+        position: absolute;
+        right: 0px;
     }
     .bloc-4-pictos{
         margin-top: 220px;
@@ -615,5 +645,25 @@ video{
     p{
         text-decoration: none;
         color: #000;
+    }
+}
+
+.newsletter-index{
+    .news-email{
+        display: inline;
+        border-radius: 5px 0px 0px 5px;
+        width: 80%;
+        height: 35px;
+        float: left;
+    }
+    .news-valider{
+        display: inline;
+        float: right;
+        border-radius: 0px 5px 5px 0px;
+        width: 20%;
+        height: 35px;
+    }
+    #mc_embed_signup input.email {
+    display: inline;
     }
 }
