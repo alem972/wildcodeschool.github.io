@@ -11,9 +11,20 @@
   bouton: "Inscription ..."
   photo: "e-agriculture"
 
-- titre: "Meetup"
-  date: "Lundi 30 mars 2015"
+- titre: "4ᵉ Meetup"
+  date: "Lundi 4 mai 2015"
   encours: true
+  heure: "18h-20h"
+  lieu: "Wild Code School, La Loupe"
+  acces: "Accès gratuit"
+  description: "Atelier de code ouvert à tous et gratuit. Rencontre, présentation de l'école et des projets des élèves."
+  URL: "http://www.meetup.com/WildCodeMeetup/"
+  bouton: "Inscription Meetup"
+  photo: "meetup-1"
+
+- titre: "3ᵉ Meetup"
+  date: "Lundi 30 mars 2015"
+  encours: false
   heure: "18h-20h"
   lieu: "Wild Code School, La Loupe"
   acces: "Accès gratuit"
@@ -29,7 +40,7 @@
   lieu: "WCS, La Loupe"
   acces: "Accès gratuit"
   description: "24h de code pour créer une application manipulant une API GPS et météo."
-  URL: "http://wildhackathon.fr/"
+  URL: "http://wildcodeschool.fr/"
   bouton: "TEST"
   photo: "hackathon-volant"
 
