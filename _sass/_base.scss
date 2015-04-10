@@ -368,7 +368,7 @@ video{
     }
 }
 
-.devenez-partenaires {
+.devenez-partenaire {
     h1 {
         font-weight: bold;
         margin-bottom: 20px;
@@ -380,6 +380,7 @@ video{
         font-weight: bold;
         margin-bottom: 20px;
     }
+
     .portrait{
         &:hover{
             filter: blur(2px);
@@ -413,11 +414,18 @@ video{
     }
     .concept-bandeau{
     background-image: url(../img/poly/polybleuclair.png);
+    background-repeat: repeat-x;
+    background-position: center center;
+    width: 100%;
     padding-top:30px;
     padding-bottom:30px;
+    margin-right:0%;
+    margin-left:0%;
+    position: absolute;
+    right: 0px;
     }
     .bloc-4-pictos{
-        margin-top: 20px;
+        margin-top: 220px;
         img h3{
             display: inline;
         }
@@ -548,7 +556,7 @@ video{
     h1{
         font-weight: bold;
         margin-bottom: 20px;
-    }       
+    }
 }
 .formulaire-candidature{
     h1{
