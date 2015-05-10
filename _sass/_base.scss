@@ -378,11 +378,27 @@ video{
 }
 
 .faq {
-    h1 {
-        font-weight: bold;
-        margin-bottom: 20px;
-
+  h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .permalink {
+    display: none;
+  }
+  h3.panel-title:hover {
+    .permalink {
+      display: inline;
     }
+  }
+}
+
+// ajoute une marge entre la navbar et une ancre dans la page
+*[id]:before {
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
 }
 
 .kit-de-presse {
@@ -444,7 +460,6 @@ video{
             -ms-filter: blur(2px);
         }
     }
-  
 }
 
 .pilotage {
@@ -457,7 +472,7 @@ video{
     }
 
     p {
-        font-style: italic; 
+        font-style: italic;
     }
 }
 
