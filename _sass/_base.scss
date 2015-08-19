@@ -19,12 +19,51 @@ body{
 }
 
 
-
-.btn-blog-partage{
+.btn-rs{
     position: fixed;
     z-index: 101;
     right: -190px;
     top: 120px;
+    border-radius: 0px;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
+    width: 231px; /* fix chrome */
+    &:hover{
+        right: -25px;
+    }
+
+    .dropdown-menu {
+        width: 210px;
+        border-radius: 0px;
+        margin-top: -1px;
+        background-color: #4C9ED9;
+        border-color: #4C9ED9;
+        color: #FFF;
+        box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
+    }
+    .dropdown-menu > li > a {
+        color: #FFF;
+        background-color: #4C9ED9;
+        &:hover{
+            text-decoration: none;
+            color: #000;
+            background-color: #79bae8;
+        }
+        &:focus{
+            text-decoration: none;
+            color: #000;
+            background-color: #79bae8;        
+        }
+    }
+}
+
+
+
+
+.btn-blog-partage{
+    position: fixed;
+    z-index: 100;
+    right: -190px;
+    top: 170px;
     border-radius: 0px;
     box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
     width: 231px; /* fix chrome */
@@ -38,8 +77,8 @@ body{
         width: 210px;
         border-radius: 0px;
         margin-top: -1px;
-        background-color: #ff8a00;
-        border-color: #ff8a00;
+        background-color: #4C9ED9;
+        border-color: #4C9ED9;
         color: #FFF;
         box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
     }
@@ -48,12 +87,12 @@ body{
         &:hover{
             text-decoration: none;
             color: #000;
-            background-color: #f38300;
+            background-color: #79bae8;
         }
         &:focus{
             text-decoration: none;
             color: #000;
-            background-color: #f38300;        
+            background-color: #79bae8;        
         }
     }
 }
@@ -68,15 +107,15 @@ body{
         border-color: #508550;
     }
 }
-.btn-orange{
+.btn-like{
     color: #FFF;
-    background-color: #ff8a00;
-    border-color: #ff8a00;
+    background-color: #4C9ED9;
+    border-color: #4C9ED9;
     border-radius: 0px;
     &:hover{
         color: #FFF;
-        background-color: #f38300;
-        border-color: #f38300;
+        background-color: #79bae8;
+        border-color: #79bae8;
     }
 }
 
@@ -280,18 +319,20 @@ body {
 /* Trois  chiffres clés */
 
 .trois{
-    background-image: url(../img/poly/polybleuclair.png);
+    //background-image: url(../img/poly/polybleuclair.png);
+    margin-top: 20px;
+    color: black;
     .sheandytroischiffres p{
         padding-top: 0px;
         font-family: "sheandy";
         font-size: 70px;
-        color: #FFF;
+
     }
     .troischiffres p{
         font-size: 20px;
         margin-top: -20px;
         padding-bottom: 0px;
-        color:#FFF;
+
     }
 }
 
@@ -639,13 +680,30 @@ video{
 
 .blog-accueil{
     color: #000;
-    a{
-        text-decoration: none;
-        color: #000;
+    .titre{
+        @media (min-width: 768px){
+            height: 7rem;
+        } 
+        a{
+            text-decoration: none;
+            color: #000;
+        }
     }
-    p{
-        text-decoration: none;
-        color: #000;
+    .article-img{
+        @media (min-width: 768px){
+            height: 23rem;
+        }
+        @media (min-width: 1200px){
+            height: 28rem;
+        }
+        img{
+        }
+    }
+    .article{
+        p{
+            text-decoration: none;
+            color: #000;
+        }      
     }
 }
 
