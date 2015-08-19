@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /foire-aux-questions/
+permalink: /faq/
 ---
 <div class="faq">
   <h1 class="text-center">FOIRE AUX QUESTIONS</h1>
@@ -9,10 +9,15 @@ permalink: /foire-aux-questions/
       <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-warning">
             <div class="panel-heading">
-              <h3 class="panel-title">{{ faq.question }}</h3>
+              <h3 class="panel-title" id={{ faq.question | slugify }}>
+                {{ faq.question }}
+                <a class="permalink" href=#{{ faq.question | slugify }} title="Permalien">
+                  <span class="glyphicon glyphicon-link">
+                </a>
+              </h3>
             </div>
             <div class="panel-body">
-              {{ faq.reponse }}
+              {{ faq.reponse | markdownify }}
           </div>
         </div>
       </div>
